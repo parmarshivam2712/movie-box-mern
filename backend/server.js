@@ -12,6 +12,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/tasks', require('./routes/tasks'));
+app.use('/api/movies', require('./routes/movies'));
 
 // Database & Server Startup
 mongoose.connect(MONGO_URI)
