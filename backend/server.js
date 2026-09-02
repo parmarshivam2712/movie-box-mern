@@ -14,10 +14,13 @@ app.use(express.json());
 app.use('/api/tasks', require('./routes/tasks'));
 app.use('/api/movies', require('./routes/movies'));
 
+const seedMoviesIfEmpty = require('./seedData');
+
 // Database & Server Startup
 mongoose.connect(MONGO_URI)
-    .then(() => {
+    .then(async () => {
         console.log('Connected to MongoDB');
+        await seedMoviesIfEmpty();
         app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     })
     .catch(err => console.error('MongoDB connection error:', err));
