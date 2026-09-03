@@ -482,7 +482,7 @@ const expandedCatalog = [
         imdb: { rating: 9.4, votes: 510000, id: 185906 }
     },
 
-    // ANIME & ANIMATED SERIES
+    // ANIME & ANIMATED SERIES (Exact TVmaze / TMDB verified posters)
     {
         title: "Attack on Titan",
         type: "Anime",
@@ -508,7 +508,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "Naruto Uzumaki, a hyperactive ninja, searches for recognition and wishes to become the Hokage of his village.",
         fullplot: "After two and a half years of training, Naruto returns to the Hidden Leaf Village, reuniting with friends to confront the rogue Akatsuki organization.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/5/14467.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/494/1236894.jpg",
         cast: ["Junko Takeuchi", "Noriaki Sugiyama", "Chie Nakamura"],
         directors: ["Hayato Date"],
         imdb: { rating: 8.7, votes: 190000, id: 988824 }
@@ -538,7 +538,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "A family is slaughtered by a demon and the surviving sister is turned into a demon herself.",
         fullplot: "Tanjiro Kamado sets out to become a demon slayer to avenge his family and find a cure for his sister Nezuko.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/465/1163452.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/210/526743.jpg",
         cast: ["Natsuki Hanae", "Akari Kito", "Hiro Shimono"],
         directors: ["Haruo Sotozaki"],
         imdb: { rating: 8.6, votes: 160000, id: 9335498 }
