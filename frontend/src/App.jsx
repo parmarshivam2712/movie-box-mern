@@ -5,7 +5,9 @@ import FilterBar from './components/FilterBar';
 import MovieGrid from './components/MovieGrid';
 import MovieModal from './components/MovieModal';
 
-const API_URL = 'http://localhost:5000/api/movies';
+const API_URL = import.meta.env.VITE_API_URL || 'https://movie-box-api.onrender.com/api/movies';
+
+//const API_URL = 'http://localhost:5000/api/movies';
 
 export default function App() {
   const [movies, setMovies] = useState([]);
