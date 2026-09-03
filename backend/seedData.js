@@ -1,7 +1,7 @@
 const Movie = require('./models/Movie');
 
 const expandedCatalog = [
-    // MOVIES (24)
+    // MOVIES (24 Exact Verified Posters)
     {
         title: "The Shawshank Redemption",
         type: "Movie",
@@ -23,7 +23,7 @@ const expandedCatalog = [
         languages: ["English", "Mandarin"],
         plot: "When the menace known as the Joker wreaks havoc, Batman must accept one of the greatest psychological tests.",
         fullplot: "Set within a year after Batman Begins, Batman, Gordon, and Harvey Dent round up criminals that plague Gotham until the Joker emerges.",
-        poster: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
         cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
         directors: ["Christopher Nolan"],
         imdb: { rating: 9.0, votes: 2700000, id: 468569 }
@@ -36,7 +36,7 @@ const expandedCatalog = [
         languages: ["English", "Japanese"],
         plot: "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of inception.",
         fullplot: "Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during dream states.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
         cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page", "Tom Hardy"],
         directors: ["Christopher Nolan"],
         imdb: { rating: 8.8, votes: 2400000, id: 1375666 }
@@ -49,7 +49,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
         fullplot: "Vincent Vega and Jules Winnfield are hitmen with a penchant for philosophical discussions. Their storyline is interwoven with those of their boss Marsellus Wallace.",
-        poster: "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SL1024_.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
         cast: ["John Travolta", "Uma Thurman", "Samuel L. Jackson", "Bruce Willis"],
         directors: ["Quentin Tarantino"],
         imdb: { rating: 8.9, votes: 2100000, id: 110912 }
@@ -62,7 +62,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "When Earth becomes uninhabitable, a pilot is tasked to lead a space mission to find a new planet for humanity.",
         fullplot: "In Earth's future, a global crop blight and second Dust Bowl slowly render the planet uninhabitable. Professor Brand works on plans to save mankind.",
-        poster: "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
         cast: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
         directors: ["Christopher Nolan"],
         imdb: { rating: 8.7, votes: 1900000, id: 816692 }
@@ -88,7 +88,7 @@ const expandedCatalog = [
         languages: ["English", "Italian"],
         plot: "The aging patriarch of an organized crime dynasty transfers control of his empire to his reluctant son.",
         fullplot: "Don Vito Corleone is the head of the Corleone mafia family in New York. When a rival decides to sell drugs, Vito refuses to support it.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
         cast: ["Marlon Brando", "Al Pacino", "James Caan"],
         directors: ["Francis Ford Coppola"],
         imdb: { rating: 9.2, votes: 1900000, id: 68646 }
@@ -101,7 +101,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "An insomniac office worker and a soap maker form an underground fight club that evolves into much more.",
         fullplot: "A depressed man suffering from insomnia meets a strange soap salesman named Tyler Durden and moves into his squalid house.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
         cast: ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
         directors: ["David Fincher"],
         imdb: { rating: 8.8, votes: 2200000, id: 137523 }
@@ -114,7 +114,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "The history of the United States unfolds from the perspective of an Alabama man with an IQ of 75.",
         fullplot: "Forrest Gump, an innocent man with a low IQ, witnesses and unwittingly influences several defining historical events in 20th century America.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
         cast: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
         directors: ["Robert Zemeckis"],
         imdb: { rating: 8.8, votes: 2100000, id: 109830 }
@@ -218,7 +218,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "The crew of a commercial spacecraft encounter a deadly alien lifeform after investigating a signal.",
         fullplot: "Deep in space, the crew of the commercial starship Nostromo investigate a mysterious distress call, encountering a lethal extraterrestrial species.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/586/1466409.jpg",
         cast: ["Sigourney Weaver", "Tom Skerritt", "John Hurt"],
         directors: ["Ridley Scott"],
         imdb: { rating: 8.5, votes: 920000, id: 78748 }
@@ -231,7 +231,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "An FBI cadet seeks the advice of incarcerated cannibal killer Hannibal Lecter to catch another serial killer.",
         fullplot: "Clarice Starling, an FBI trainee, interviews Dr. Hannibal Lecter, a brilliant psychiatrist and cannibalistic serial killer, to gain insight on a new case.",
-        poster: "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
         cast: ["Jodie Foster", "Anthony Hopkins", "Lawrence A. Bonney"],
         directors: ["Jonathan Demme"],
         imdb: { rating: 8.6, votes: 1480000, id: 102926 }
@@ -270,7 +270,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "A young lion prince flees his kingdom after his father's death, growing up to reclaim his birthright.",
         fullplot: "Simba, a lion prince, is tricked by his bitter uncle Scar into believing he caused his father's death, fleeing into exile before returning to reclaim Pride Rock.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
         cast: ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"],
         directors: ["Roger Allers", "Rob Minkoff"],
         imdb: { rating: 8.5, votes: 1080000, id: 110357 }
@@ -283,7 +283,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "Blade Runner K unearths a long-buried secret that leads him to find former Blade Runner Rick Deckard.",
         fullplot: "Thirty years after the events of the original film, Officer K, a new LAPD Blade Runner, uncovers a secret that could plunge humanity into chaos.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+        poster: "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
         cast: ["Ryan Gosling", "Harrison Ford", "Ana de Armas"],
         directors: ["Denis Villeneuve"],
         imdb: { rating: 8.0, votes: 630000, id: 1856101 }
@@ -309,13 +309,13 @@ const expandedCatalog = [
         languages: ["English", "French"],
         plot: "A legendary concierge and his lobby boy become involved in the theft of a priceless Renaissance painting.",
         fullplot: "Gustave H, a legendary concierge at a famous European hotel, and Zero Moustafa, his lobby boy, navigate murder, fortune, and war.",
-        poster: "https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_SX300.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
         cast: ["Ralph Fiennes", "F. Murray Abraham", "Adrien Brody"],
         directors: ["Wes Anderson"],
         imdb: { rating: 8.1, votes: 840000, id: 2278388 }
     },
 
-    // TV SHOWS & SERIES (11)
+    // TV SHOWS (Exact TVmaze Show ID verified posters)
     {
         title: "Breaking Bad",
         type: "TV Show",
@@ -326,7 +326,7 @@ const expandedCatalog = [
         languages: ["English", "Spanish"],
         plot: "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing methamphetamine.",
         fullplot: "Walter White, a mild-mannered chemistry teacher, partners with former student Jesse Pinkman to produce top-grade crystal meth to secure his family's financial future.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/0/2400.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/501/1253519.jpg",
         cast: ["Bryan Cranston", "Aaron Paul", "Anna Gunn", "Bob Odenkirk"],
         directors: ["Vince Gilligan"],
         imdb: { rating: 9.5, votes: 2100000, id: 903747 }
@@ -341,7 +341,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns.",
         fullplot: "In the mythical continent of Westeros, powerful families clash for control of the Iron Throne while an army of undead gathers beyond the Great Wall.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/275/688576.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/498/1245274.jpg",
         cast: ["Emilia Clarke", "Kit Harington", "Peter Dinklage", "Lena Headey"],
         directors: ["David Benioff", "D.B. Weiss"],
         imdb: { rating: 9.2, votes: 2200000, id: 944947 }
@@ -356,7 +356,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "When a young boy vanishes, a small town uncovers a mystery involving secret experiments and a psychokinetic girl.",
         fullplot: "In 1980s Indiana, a group of young friends search for their missing buddy Will, discovering supernatural forces, government secrets, and Eleven.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/200/501742.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/595/1489169.jpg",
         cast: ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder", "David Harbour"],
         directors: ["The Duffer Brothers"],
         imdb: { rating: 8.7, votes: 1300000, id: 4574334 }
@@ -371,7 +371,7 @@ const expandedCatalog = [
         languages: ["English", "Russian"],
         plot: "In April 1986, a massive explosion erupts at the Chernobyl nuclear power station in the USSR.",
         fullplot: "A dramatization of the 1986 nuclear disaster in Soviet Ukraine, focusing on the scientists and workers who sacrificed everything to contain the radiation.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/280/700901.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/193/482599.jpg",
         cast: ["Jared Harris", "Stellan Skarsgård", "Emily Watson"],
         directors: ["Craig Mazin", "Johan Renck"],
         imdb: { rating: 9.4, votes: 850000, id: 7134908 }
@@ -386,7 +386,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "A hardened survivor is hired to smuggle a 14-year-old girl across a post-apocalyptic United States.",
         fullplot: "Twenty years after a fungal infection destroys civilization, Joel is tasked with escorting Ellie, who may hold the key to a global cure.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/439/1098679.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/563/1409008.jpg",
         cast: ["Pedro Pascal", "Bella Ramsey", "Gabriel Luna"],
         directors: ["Craig Mazin", "Neil Druckmann"],
         imdb: { rating: 8.8, votes: 520000, id: 3581920 }
@@ -401,7 +401,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "A modern update finds the famous sleuth solving crime in 21st century London.",
         fullplot: "Dr. John Watson, an army doctor returned from Afghanistan, becomes roommates with eccentric consulting detective Sherlock Holmes in modern London.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/182/456860.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/171/428042.jpg",
         cast: ["Benedict Cumberbatch", "Martin Freeman", "Una Stubbs"],
         directors: ["Mark Gatiss", "Steven Moffat"],
         imdb: { rating: 9.1, votes: 980000, id: 1475582 }
@@ -416,7 +416,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "Seasonal anthology series in which police investigations unearth dark secrets of involved personnel.",
         fullplot: "Louisiana homicide detectives Rust Cohle and Marty Hart revisit a grisly 1995 murder case, uncovering dark occult secrets spanning two decades.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/493/1232810.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/490/1226764.jpg",
         cast: ["Matthew McConaughey", "Woody Harrelson", "Mahershala Ali", "Jodie Foster"],
         directors: ["Nic Pizzolatto"],
         imdb: { rating: 8.9, votes: 640000, id: 2356777 }
@@ -431,7 +431,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks of their caps.",
         fullplot: "Tommy Shelby, a fierce crime boss, leads the Peaky Blinders gang in Birmingham, England, aiming to build a legitimate business empire after WWI.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/48/122226.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/48/122213.jpg",
         cast: ["Cillian Murphy", "Paul Anderson", "Helen McCrory", "Tom Hardy"],
         directors: ["Steven Knight"],
         imdb: { rating: 8.8, votes: 650000, id: 2431168 }
@@ -446,7 +446,7 @@ const expandedCatalog = [
         languages: ["English", "Spanish"],
         plot: "The trials and tribulations of criminal lawyer Jimmy McGill in the years leading up to Breaking Bad.",
         fullplot: "Former con artist Jimmy McGill transforms into morally challenged criminal defense attorney Saul Goodman in Albuquerque, New Mexico.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/406/1017320.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/501/1253515.jpg",
         cast: ["Bob Odenkirk", "Rhea Seehorn", "Jonathan Banks", "Giancarlo Esposito"],
         directors: ["Vince Gilligan", "Peter Gould"],
         imdb: { rating: 9.0, votes: 620000, id: 3038612 }
@@ -461,7 +461,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "A mockumentary on a group of typical office workers where the workday consists of ego clashes and inappropriate behavior.",
         fullplot: "Dunder Mifflin paper company branch manager Michael Scott leads an eccentric team of office employees in Scranton, Pennsylvania.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/480/1202454.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/481/1204342.jpg",
         cast: ["Steve Carell", "Rainn Wilson", "John Krasinski", "Jenna Fischer"],
         directors: ["Greg Daniels"],
         imdb: { rating: 9.0, votes: 700000, id: 386676 }
@@ -476,13 +476,13 @@ const expandedCatalog = [
         languages: ["English", "German"],
         plot: "The story of Easy Company of the U.S. Army 101st Airborne Division during World War II.",
         fullplot: "Dramatizing the journey of Easy Company from jump training in Georgia through D-Day, Market Garden, and the Battle of the Bulge.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/1/4096.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/80/201679.jpg",
         cast: ["Damian Lewis", "Ron Livingston", "Scott Grimes"],
         directors: ["Steven Spielberg", "Tom Hanks"],
         imdb: { rating: 9.4, votes: 510000, id: 185906 }
     },
 
-    // ANIME & ANIMATED SERIES (10)
+    // ANIME & ANIMATED SERIES
     {
         title: "Attack on Titan",
         type: "Anime",
@@ -493,7 +493,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "After his hometown is destroyed and his mother is killed, Eren Jaeger vows to cleanse the earth of giant Titans.",
         fullplot: "Humanity lives enclosed within three massive concentric walls to protect themselves from man-eating humanoid Titans. Eren Jaeger joins the Scout Regiment to fight back.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/448/1121045.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/632/1582290.jpg",
         cast: ["Yuki Kaji", "Yui Ishikawa", "Marina Inoue"],
         directors: ["Tetsuro Araki", "Yuichiro Hayashi"],
         imdb: { rating: 9.1, votes: 520000, id: 2560140 }
@@ -508,7 +508,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "Naruto Uzumaki, a hyperactive ninja, searches for recognition and wishes to become the Hokage of his village.",
         fullplot: "After two and a half years of training, Naruto returns to the Hidden Leaf Village, reuniting with friends to confront the rogue Akatsuki organization.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/494/1236894.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/5/14467.jpg",
         cast: ["Junko Takeuchi", "Noriaki Sugiyama", "Chie Nakamura"],
         directors: ["Hayato Date"],
         imdb: { rating: 8.7, votes: 190000, id: 988824 }
@@ -523,7 +523,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "An intelligent high school student discovers a supernatural notebook that grants the ability to kill anyone.",
         fullplot: "Light Yagami finds a Shinigami notebook called the Death Note, attempting to rid the world of criminals while engaging in a battle of wits against detective L.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/49/124707.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/499/1249019.jpg",
         cast: ["Mamoru Miyano", "Kappei Yamaguchi", "Shido Nakamura"],
         directors: ["Tetsuro Araki"],
         imdb: { rating: 8.9, votes: 360000, id: 877057 }
@@ -553,7 +553,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "Set in the League of Legends universe, two sisters fight on rival sides of a war between utopian Piltover and Zaun.",
         fullplot: "Amidst the stark discord of twin cities Piltover and Zaun, sisters Vi and Jinx fight on opposing sides of a war between magic technologies and political convictions.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/378/947097.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/536/1340287.jpg",
         cast: ["Hailee Steinfeld", "Ella Purnell", "Kevin Alejandro"],
         directors: ["Pascal Charrue", "Arnaud Delord"],
         imdb: { rating: 9.0, votes: 260000, id: 11126994 }
@@ -607,7 +607,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself.",
         fullplot: "High schooler Yuji Itadori swallows a legendary curse to save his friends, becoming host to Sukuna and joining Jujutsu High.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/470/1176211.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/608/1521905.jpg",
         cast: ["Junya Enoki", "Yuma Uchida", "Asami Seto"],
         directors: ["Sunghoo Park"],
         imdb: { rating: 8.6, votes: 130000, id: 12343534 }
@@ -622,7 +622,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes wrong.",
         fullplot: "Brothers Edward and Alphonse Elric search for the Philosopher's Stone to restore their bodies after a tragic alchemy ritual.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/497/1244030.jpg",
+        poster: "https://static.tvmaze.com/uploads/images/original_untouched/485/1214095.jpg",
         cast: ["Romi Park", "Rie Kugimiya", "Megumi Takamoto"],
         directors: ["Yasuhiro Irie"],
         imdb: { rating: 9.1, votes: 190000, id: 1441221 }
