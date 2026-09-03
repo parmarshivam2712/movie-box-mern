@@ -7,9 +7,21 @@ const movieSchema = new mongoose.Schema({
         trim: true,
         index: true,
     },
+    type: {
+        type: String,
+        enum: ['Movie', 'TV Show', 'Anime'],
+        default: 'Movie',
+        index: true,
+    },
     year: {
         type: Number,
         index: true,
+    },
+    seasons: {
+        type: Number,
+    },
+    episodes: {
+        type: Number,
     },
     genres: [{
         type: String,

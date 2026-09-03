@@ -6,14 +6,17 @@ const Movie = require('../models/Movie');
 router.get('/', async (req, res) => {
     try {
         const page = parseInt(req.query.page) || 1;
-        const limit = parseInt(req.query.limit) || 12;
+        const limit = parseInt(req.query.limit) || 16;
         const skip = (page - 1) * limit;
 
-        const { search, genre, year, language, minRating, sortBy } = req.query;
+        const { search, type, genre, year, language, minRating, sortBy } = req.query;
         const query = {};
 
         if (search) {
             query.title = { $regex: search, $options: 'i' };
+        }
+        if (type && type !== 'All' && type !== 'All Media') {
+            query.type = type;
         }
         if (genre && genre !== 'All') {
             query.genres = genre;
@@ -55,7 +58,7 @@ router.get('/', async (req, res) => {
 router.get('/suggest', async (req, res) => {
     try {
         const randomMovie = await Movie.aggregate([
-            { $match: { poster: { $exists: true, $ne: null }, 'imdb.rating': { $gte: 6.5 } } },
+            { $match: { poster: { $exists: true, $ne: null }, 'imdb.rating': { $gte: 7.0 } } },
             { $sample: { size: 1 } }
         ]);
 
@@ -65,6 +68,16 @@ router.get('/suggest', async (req, res) => {
         }
 
         res.json(randomMovie[0]);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// GET /api/movies/types - List distinct media types
+router.get('/types', async (req, res) => {
+    try {
+        const types = await Movie.distinct('type');
+        res.json(types.filter(Boolean).sort());
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
