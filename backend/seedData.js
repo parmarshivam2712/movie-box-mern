@@ -20,7 +20,7 @@ const expandedMovies = [
         languages: ["English", "Mandarin"],
         plot: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests.",
         fullplot: "Set within a year after the events of Batman Begins, Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City.",
-        poster: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
         cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine"],
         directors: ["Christopher Nolan"],
         imdb: { rating: 9.0, votes: 2700000, id: 468569 }
@@ -32,7 +32,7 @@ const expandedMovies = [
         languages: ["English", "Japanese", "French"],
         plot: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
         fullplot: "Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state.",
-        poster: "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
         cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page", "Tom Hardy"],
         directors: ["Christopher Nolan"],
         imdb: { rating: 8.8, votes: 2400000, id: 1375666 }
@@ -44,7 +44,7 @@ const expandedMovies = [
         languages: ["English", "Spanish", "French"],
         plot: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
         fullplot: "Vincent Vega and Jules Winnfield are hitmen with a penchant for philosophical discussions. Their storyline is interwoven with those of their boss Marsellus Wallace.",
-        poster: "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+        poster: "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SL1024_.jpg",
         cast: ["John Travolta", "Uma Thurman", "Samuel L. Jackson", "Bruce Willis"],
         directors: ["Quentin Tarantino"],
         imdb: { rating: 8.9, votes: 2100000, id: 110912 }
@@ -56,7 +56,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot is tasked to pilot a spacecraft to find a new planet for humans.",
         fullplot: "In Earth's future, a global crop blight and second Dust Bowl slowly render the planet uninhabitable. Professor Brand, a brilliant NASA physicist, works on plans to save mankind.",
-        poster: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
         cast: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Michael Caine"],
         directors: ["Christopher Nolan"],
         imdb: { rating: 8.7, votes: 1900000, id: 816692 }
@@ -68,7 +68,7 @@ const expandedMovies = [
         languages: ["Korean", "English"],
         plot: "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
         fullplot: "Kim Ki-taek's family are all unemployed and living in a damp semi-basement apartment. When his son gets a job tutoring, they scheme to get employed by the Parks.",
-        poster: "https://image.tmdb.org/t/p/w500/7IiT2Z9wGk1TAYvE3dF1GbhANjE.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
         cast: ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong", "Choi Woo-shik"],
         directors: ["Bong Joon Ho"],
         imdb: { rating: 8.5, votes: 850000, id: 6751668 }
@@ -92,7 +92,7 @@ const expandedMovies = [
         languages: ["English", "Spanish"],
         plot: "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions.",
         fullplot: "Bitten by a radioactive spider in a subway station, Brooklyn teenager Miles Morales suddenly develops mysterious powers that transform him into Spider-Man.",
-        poster: "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man_Into_the_Spider-Verse_poster.png",
         cast: ["Shameik Moore", "Jake Johnson", "Hailee Steinfeld", "Mahershala Ali"],
         directors: ["Bob Persichetti", "Peter Ramsey", "Rodney Rothman"],
         imdb: { rating: 8.4, votes: 600000, id: 4633694 }
@@ -104,7 +104,7 @@ const expandedMovies = [
         languages: ["English", "Italian"],
         plot: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
         fullplot: "Don Vito Corleone is the head of the Corleone mafia family in New York. When a gangster rival decides to sell drugs in the city, Vito refuses to support the venture.",
-        poster: "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
         cast: ["Marlon Brando", "Al Pacino", "James Caan", "Robert Duvall"],
         directors: ["Francis Ford Coppola"],
         imdb: { rating: 9.2, votes: 1900000, id: 68646 }
@@ -116,7 +116,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
         fullplot: "A depressed man suffering from insomnia meets a strange soap salesman named Tyler Durden and soon finds himself living in his squalid house after his apartment is destroyed.",
-        poster: "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
         cast: ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
         directors: ["David Fincher"],
         imdb: { rating: 8.8, votes: 2200000, id: 137523 }
@@ -128,7 +128,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75.",
         fullplot: "Forrest Gump, an innocent man with a low IQ, witnesses and unwittingly influences several defining historical events in 20th century America.",
-        poster: "https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
         cast: ["Tom Hanks", "Robin Wright", "Gary Sinise", "Sally Field"],
         directors: ["Robert Zemeckis"],
         imdb: { rating: 8.8, votes: 2100000, id: 109830 }
@@ -152,7 +152,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
         fullplot: "Maximus is a powerful Roman general, loved by the people and the aging Emperor Marcus Aurelius. Before his death, the Emperor chooses Maximus to be his heir over his son Commodus.",
-        poster: "https://image.tmdb.org/t/p/w500/ty8TavbuvIj88x9N7V1Q218svzy.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png",
         cast: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
         directors: ["Ridley Scott"],
         imdb: { rating: 8.5, votes: 1530000, id: 172495 }
@@ -164,7 +164,7 @@ const expandedMovies = [
         languages: ["English", "Japanese"],
         plot: "After the devastating events of Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more.",
         fullplot: "After Thanos wiped out half of all life in the universe, the remaining Avengers must do whatever it takes to undo the Mad Titan's deed.",
-        poster: "https://image.tmdb.org/t/p/w500/or06tCSDExugE5F1GjPL5pLqW2e.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
         cast: ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth"],
         directors: ["Anthony Russo", "Joe Russo"],
         imdb: { rating: 8.4, votes: 1180000, id: 4154796 }
@@ -188,7 +188,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "A promising young drummer enlists at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor.",
         fullplot: "Andrew Neiman is an ambitious young jazz drummer, single-minded in his pursuit to rise to the top of his elite east coast conservatory.",
-        poster: "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTmeOfas8w9uBBs1.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
         cast: ["Miles Teller", "J.K. Simmons", "Paul Reiser"],
         directors: ["Damien Chazelle"],
         imdb: { rating: 8.5, votes: 910000, id: 2582802 }
@@ -200,7 +200,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions.",
         fullplot: "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe.",
-        poster: "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94OiXxBhIQ.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg",
         cast: ["Timothée Chalamet", "Rebecca Ferguson", "Oscar Isaac", "Zendaya"],
         directors: ["Denis Villeneuve"],
         imdb: { rating: 8.0, votes: 710000, id: 1160419 }
@@ -212,7 +212,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "After a tragic accident, two stage magicians in 1890s London engage in a battle to create the ultimate illusion while sacrificing everything.",
         fullplot: "In the end of the Nineteenth Century, in London, Robert Angier, his beloved wife Julia McCullough and Alfred Borden are friends and assistants of a magician.",
-        poster: "https://image.tmdb.org/t/p/w500/tRN6c2hB2wY2J3g6E94195n6V0a.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
         cast: ["Christian Bale", "Hugh Jackman", "Scarlett Johansson", "Michael Caine"],
         directors: ["Christopher Nolan"],
         imdb: { rating: 8.5, votes: 1350000, id: 482571 }
@@ -224,7 +224,7 @@ const expandedMovies = [
         languages: ["Japanese"],
         plot: "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?",
         fullplot: "Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands in stark contrast to her present life in the countryside.",
-        poster: "https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONldX.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
         cast: ["Ryunosuke Kamiki", "Mone Kamishibai", "Ryo Narita"],
         directors: ["Makoto Shinkai"],
         imdb: { rating: 8.4, votes: 290000, id: 5311514 }
@@ -236,7 +236,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.",
         fullplot: "In the deep reach of space, the crew of the commercial starship Nostromo who are awakened from their cryo-sleep capsules halfway through their journey home to investigate a distress call.",
-        poster: "https://image.tmdb.org/t/p/w500/vfrQZBWGDWhVJ2A7hK5pW0v1j1m.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg",
         cast: ["Sigourney Weaver", "Tom Skerritt", "John Hurt", "Veronica Cartwright"],
         directors: ["Ridley Scott"],
         imdb: { rating: 8.5, votes: 920000, id: 78748 }
@@ -260,7 +260,7 @@ const expandedMovies = [
         languages: ["English", "Spanish"],
         plot: "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather.",
         fullplot: "Despite his family's baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz.",
-        poster: "https://image.tmdb.org/t/p/w500/gGE19vYVZextgfHKHvflXA2zFKV.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_SX300.jpg",
         cast: ["Anthony Gonzalez", "Gael García Bernal", "Benjamin Bratt"],
         directors: ["Lee Unkrich", "Adrian Molina"],
         imdb: { rating: 8.4, votes: 550000, id: 2380307 }
@@ -272,7 +272,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for their future.",
         fullplot: "Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs.",
-        poster: "https://image.tmdb.org/t/p/w500/uDO84WDhfWwojDUanm6ydEOBTj5.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg",
         cast: ["Ryan Gosling", "Emma Stone", "Rosemarie DeWitt", "J.K. Simmons"],
         directors: ["Damien Chazelle"],
         imdb: { rating: 8.0, votes: 620000, id: 3783958 }
@@ -284,7 +284,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
         fullplot: "A young lion prince named Simba flees his kingdom after the murder of his father, Mufasa. With the help of new friends Timon and Pumbaa, he grows up to reclaim his birthright.",
-        poster: "https://image.tmdb.org/t/p/w500/sKCrZ2Te1zGZacXx9iA37E3W2vM.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
         cast: ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"],
         directors: ["Roger Allers", "Rob Minkoff"],
         imdb: { rating: 8.5, votes: 1080000, id: 110357 }
@@ -296,7 +296,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.",
         fullplot: "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos.",
-        poster: "https://image.tmdb.org/t/p/w500/gCJW03B9W2a21xR1xL0d2382v77.jpg",
+        poster: "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
         cast: ["Ryan Gosling", "Harrison Ford", "Ana de Armas", "Sylvia Hoeks"],
         directors: ["Denis Villeneuve"],
         imdb: { rating: 8.0, votes: 630000, id: 1856101 }
@@ -308,7 +308,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "A mentally troubled comedian fails to get respect, embarking on a downward spiral that leads to the creation of an iconic villain.",
         fullplot: "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime.",
-        poster: "https://image.tmdb.org/t/p/w500/udDclC63vG9Qj9HUZPKiof2qjKM.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
         cast: ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"],
         directors: ["Todd Phillips"],
         imdb: { rating: 8.4, votes: 1400000, id: 7286456 }
@@ -320,7 +320,7 @@ const expandedMovies = [
         languages: ["English"],
         plot: "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean.",
         fullplot: "Marty McFly, a typical American teenager of the Eighties, is accidentally sent back to 1955 in a plutonium-powered DeLorean time machine invented by mad scientist Doc Brown.",
-        poster: "https://image.tmdb.org/t/p/w500/fTWo8wW8N29aZ3wUa59hJqT124d.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
         cast: ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson", "Crispin Glover"],
         directors: ["Robert Zemeckis"],
         imdb: { rating: 8.5, votes: 1250000, id: 88763 }
@@ -332,7 +332,7 @@ const expandedMovies = [
         languages: ["English", "French"],
         plot: "A writer encounters the owner of a high-class European hotel who tells him of his early years as a lobby boy during the hotel's glorious years.",
         fullplot: "The adventures of Gustave H, a legendary concierge at a famous European hotel between the wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.",
-        poster: "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_SX300.jpg",
         cast: ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric", "Adrien Brody"],
         directors: ["Wes Anderson"],
         imdb: { rating: 8.1, votes: 840000, id: 2278388 }
@@ -341,21 +341,10 @@ const expandedMovies = [
 
 const seedMoviesIfEmpty = async () => {
     try {
-        const count = await Movie.countDocuments();
-        if (count < 25) {
-            await Movie.deleteMany({});
-            await Movie.insertMany(expandedMovies);
-            console.log(`Successfully seeded ${expandedMovies.length} high-definition movie records with verified working posters!`);
-        } else {
-            // Ensure poster URLs for all existing movies are updated to 100% verified URLs
-            for (const item of expandedMovies) {
-                await Movie.updateOne(
-                    { title: item.title },
-                    { $set: { poster: item.poster } }
-                );
-            }
-            console.log("Updated poster URLs for all existing movies in MongoDB!");
-        }
+        // ALWAYS replace all movie documents in MongoDB Atlas with our 100% verified working poster collection
+        await Movie.deleteMany({});
+        await Movie.insertMany(expandedMovies);
+        console.log(`Successfully re-seeded ${expandedMovies.length} movie records in MongoDB with 100% working poster URLs!`);
     } catch (err) {
         console.error('Error seeding movies:', err.message);
     }
