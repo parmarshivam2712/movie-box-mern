@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const FALLBACK_POSTER = '/placeholder-poster.svg';
 
@@ -8,6 +8,15 @@ export default function MovieModal({ movie, onClose, onRateMovie }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [rateSuccess, setRateSuccess] = useState(false);
   const [imgSrc, setImgSrc] = useState(movie?.poster || FALLBACK_POSTER);
+  const [hasError, setHasError] = useState(false);
+
+  // Sync state whenever the selected movie changes
+  useEffect(() => {
+    if (movie) {
+      setImgSrc(movie.poster || FALLBACK_POSTER);
+      setHasError(false);
+    }
+  }, [movie?._id, movie?.poster]);
 
   if (!movie) return null;
 
@@ -23,6 +32,13 @@ export default function MovieModal({ movie, onClose, onRateMovie }) {
     setTimeout(() => setRateSuccess(false), 3500);
   };
 
+  const handleImageError = () => {
+    if (!hasError) {
+      setHasError(true);
+      setImgSrc(FALLBACK_POSTER);
+    }
+  };
+
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -35,7 +51,7 @@ export default function MovieModal({ movie, onClose, onRateMovie }) {
             src={imgSrc}
             alt={movie.title}
             className="modal-poster"
-            onError={() => setImgSrc(FALLBACK_POSTER)}
+            onError={handleImageError}
           />
         </div>
 

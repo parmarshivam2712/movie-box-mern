@@ -176,7 +176,7 @@ const expandedMovies = [
         languages: ["English", "German"],
         plot: "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
         fullplot: "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+        poster: "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
         cast: ["Cillian Murphy", "Emily Blunt", "Matt Damon", "Robert Downey Jr."],
         directors: ["Christopher Nolan"],
         imdb: { rating: 8.9, votes: 620000, id: 15398776 }
