@@ -538,7 +538,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "A family is slaughtered by a demon and the surviving sister is turned into a demon herself.",
         fullplot: "Tanjiro Kamado sets out to become a demon slayer to avenge his family and find a cure for his sister Nezuko.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/210/526743.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BNmQ5Zjg2ZTYtMGZmNC00M2Y3LTgwZGQtYmQ3NWI5MDdhZWNjXkEyXkFqcGc@._V1_FMjpg_UX900_.jpg",
         cast: ["Natsuki Hanae", "Akari Kito", "Hiro Shimono"],
         directors: ["Haruo Sotozaki"],
         imdb: { rating: 8.6, votes: 160000, id: 9335498 }
