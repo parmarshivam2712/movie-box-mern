@@ -8,6 +8,13 @@ export default function MovieCard({ movie, onClick }) {
   const [hasError, setHasError] = useState(false);
 
   const rating = movie.userAverageRating || movie.imdb?.rating || 'N/A';
+  const mediaType = movie.type || 'Movie';
+
+  const typeIconMap = {
+    Movie: '🎬',
+    'TV Show': '📺',
+    Anime: '⛩️',
+  };
 
   const handleError = () => {
     if (!hasError) {
@@ -28,6 +35,9 @@ export default function MovieCard({ movie, onClick }) {
           loading="lazy"
         />
 
+        <div className="badge-type">
+          {typeIconMap[mediaType] || '🎬'} {mediaType}
+        </div>
         <div className="badge-rating">⭐ {rating}</div>
       </div>
 
@@ -35,7 +45,7 @@ export default function MovieCard({ movie, onClick }) {
         <div className="movie-title">{movie.title}</div>
         <div className="movie-meta">
           <span>{movie.year}</span>
-          <span>{movie.languages?.[0] || 'English'}</span>
+          <span>{movie.seasons ? `${movie.seasons} Seasons` : movie.languages?.[0] || 'English'}</span>
         </div>
 
         {movie.genres && movie.genres.length > 0 ? (

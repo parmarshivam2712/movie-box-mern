@@ -14,6 +14,7 @@ export default function App() {
 
   // Filter & Search States
   const [search, setSearch] = useState('');
+  const [selectedType, setSelectedType] = useState('All');
   const [selectedGenre, setSelectedGenre] = useState('All');
   const [selectedYear, setSelectedYear] = useState('All');
   const [minRating, setMinRating] = useState('');
@@ -28,11 +29,12 @@ export default function App() {
       const res = await axios.get(API_URL, {
         params: {
           search,
+          type: selectedType,
           genre: selectedGenre,
           year: selectedYear,
           minRating,
           sortBy,
-          limit: 24,
+          limit: 30,
         },
       });
       setMovies(res.data.movies || []);
@@ -61,7 +63,7 @@ export default function App() {
       fetchMovies();
     }, 300);
     return () => clearTimeout(timer);
-  }, [search, selectedGenre, selectedYear, minRating, sortBy]);
+  }, [search, selectedType, selectedGenre, selectedYear, minRating, sortBy]);
 
   const handleSuggestMovie = async () => {
     try {
@@ -70,7 +72,7 @@ export default function App() {
         setSelectedMovie(res.data);
       }
     } catch (err) {
-      console.error('Failed to fetch random movie suggestion', err);
+      console.error('Failed to fetch random suggestion', err);
     }
   };
 
@@ -82,7 +84,7 @@ export default function App() {
         setMovies(movies.map((m) => (m._id === id ? res.data.movie : m)));
       }
     } catch (err) {
-      console.error('Failed to submit movie rating', err);
+      console.error('Failed to submit rating', err);
     }
   };
 
@@ -96,6 +98,8 @@ export default function App() {
 
       <FilterBar
         genres={genres}
+        selectedType={selectedType}
+        setSelectedType={setSelectedType}
         selectedGenre={selectedGenre}
         setSelectedGenre={setSelectedGenre}
         selectedYear={selectedYear}

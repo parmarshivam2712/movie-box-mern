@@ -208,6 +208,21 @@ body {
   transform: scale(1.05);
 }
 
+.badge-type {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f8fafc;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
 .badge-rating {
   position: absolute;
   top: 12px;
@@ -367,6 +382,23 @@ body {
   color: #fbbf24;
   font-weight: 800;
   font-size: 16px;
+}
+
+.type-badge-inline {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.series-episodes-info {
+  font-size: 13px;
+  color: #a5b4fc;
+  font-weight: 600;
+  margin-top: 6px;
 }
 
 .meta-divider {

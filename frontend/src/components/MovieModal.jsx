@@ -10,7 +10,6 @@ export default function MovieModal({ movie, onClose, onRateMovie }) {
   const [imgSrc, setImgSrc] = useState(movie?.poster || FALLBACK_POSTER);
   const [hasError, setHasError] = useState(false);
 
-  // Sync state whenever the selected movie changes
   useEffect(() => {
     if (movie) {
       setImgSrc(movie.poster || FALLBACK_POSTER);
@@ -22,6 +21,7 @@ export default function MovieModal({ movie, onClose, onRateMovie }) {
 
   const activeRating = hoverStars || selectedStars;
   const ratingDisplay = movie.userAverageRating || movie.imdb?.rating || 'N/A';
+  const mediaType = movie.type || 'Movie';
 
   const handleRateSubmit = async (score) => {
     setSelectedStars(score);
@@ -61,10 +61,16 @@ export default function MovieModal({ movie, onClose, onRateMovie }) {
               {movie.title} <span className="modal-year">({movie.year})</span>
             </h2>
             <div className="modal-meta-row">
+              <span className="type-badge-inline">{mediaType}</span>
               <span className="rating-badge-large">⭐ {ratingDisplay} / 10</span>
               <span className="meta-divider">•</span>
               <span className="genres-list">{movie.genres?.join(', ')}</span>
             </div>
+            {movie.seasons ? (
+              <div className="series-episodes-info">
+                📺 {movie.seasons} Season{movie.seasons > 1 ? 's' : ''} • {movie.episodes} Episodes
+              </div>
+            ) : null}
           </div>
 
           <p className="modal-plot">
@@ -79,7 +85,7 @@ export default function MovieModal({ movie, onClose, onRateMovie }) {
             )}
             {movie.directors && movie.directors.length > 0 && (
               <div>
-                <strong>Director:</strong> {movie.directors.join(', ')}
+                <strong>Director/Creator:</strong> {movie.directors.join(', ')}
               </div>
             )}
           </div>
