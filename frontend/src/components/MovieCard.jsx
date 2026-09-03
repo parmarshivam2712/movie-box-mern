@@ -1,27 +1,32 @@
 import React, { useState } from 'react';
 
+const FALLBACK_POSTER = '/placeholder-poster.svg';
+
 export default function MovieCard({ movie, onClick }) {
+  const [imgSrc, setImgSrc] = useState(movie.poster || FALLBACK_POSTER);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
+
   const rating = movie.userAverageRating || movie.imdb?.rating || 'N/A';
+
+  const handleError = () => {
+    if (!hasError) {
+      setHasError(true);
+      setImgSrc(FALLBACK_POSTER);
+    }
+  };
 
   return (
     <div className="movie-card" onClick={() => onClick(movie)}>
       <div className="poster-container">
-        {movie.poster && !hasError ? (
-          <img
-            src={movie.poster}
-            alt={movie.title}
-            className="poster-img"
-            onError={() => setHasError(true)}
-            loading="lazy"
-          />
-        ) : (
-          <div className="poster-fallback">
-            <span style={{ fontSize: '32px', marginBottom: '8px' }}>🎬</span>
-            <span className="fallback-title">{movie.title}</span>
-            <span className="fallback-year">{movie.year}</span>
-          </div>
-        )}
+        <img
+          src={imgSrc}
+          alt={movie.title}
+          className={`poster-img ${isLoaded ? 'loaded' : 'loading'}`}
+          onLoad={() => setIsLoaded(true)}
+          onError={handleError}
+          loading="lazy"
+        />
 
         <div className="badge-rating">⭐ {rating}</div>
       </div>

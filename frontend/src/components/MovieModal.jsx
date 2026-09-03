@@ -1,93 +1,104 @@
 import React, { useState } from 'react';
 
+const FALLBACK_POSTER = '/placeholder-poster.svg';
+
 export default function MovieModal({ movie, onClose, onRateMovie }) {
-  const [userRating, setUserRating] = useState(8);
+  const [selectedStars, setSelectedStars] = useState(8);
+  const [hoverStars, setHoverStars] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [rateSuccess, setRateSuccess] = useState(false);
+  const [imgSrc, setImgSrc] = useState(movie?.poster || FALLBACK_POSTER);
 
   if (!movie) return null;
 
-  const handleRate = async (e) => {
-    e.preventDefault();
+  const activeRating = hoverStars || selectedStars;
+  const ratingDisplay = movie.userAverageRating || movie.imdb?.rating || 'N/A';
+
+  const handleRateSubmit = async (score) => {
+    setSelectedStars(score);
     setIsSubmitting(true);
-    await onRateMovie(movie._id, userRating);
+    await onRateMovie(movie._id, score);
     setIsSubmitting(false);
     setRateSuccess(true);
-    setTimeout(() => setRateSuccess(false), 3000);
+    setTimeout(() => setRateSuccess(false), 3500);
   };
-
-  const rating = movie.userAverageRating || movie.imdb?.rating || 'N/A';
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="btn-close" onClick={onClose}>
+        <button className="btn-close" onClick={onClose} title="Close Modal">
           ✕
         </button>
 
-        {movie.poster ? (
-          <img src={movie.poster} alt={movie.title} className="modal-poster" />
-        ) : (
-          <div
-            className="poster-fallback"
-            style={{ width: '220px', height: '330px', borderRadius: '10px' }}
-          >
-            🎬 {movie.title}
-          </div>
-        )}
+        <div className="modal-poster-wrap">
+          <img
+            src={imgSrc}
+            alt={movie.title}
+            className="modal-poster"
+            onError={() => setImgSrc(FALLBACK_POSTER)}
+          />
+        </div>
 
         <div className="modal-details">
-          <h2>
-            {movie.title} <span style={{ fontSize: '18px', color: '#94a3b8' }}>({movie.year})</span>
-          </h2>
-
-          <div style={{ display: 'flex', gap: '12px', alignItems: 'center', fontSize: '14px' }}>
-            <span style={{ color: '#fbbf24', fontWeight: 'bold' }}>⭐ {rating} / 10</span>
-            <span style={{ color: '#94a3b8' }}>|</span>
-            <span style={{ color: '#94a3b8' }}>{movie.genres?.join(', ')}</span>
+          <div className="modal-header-info">
+            <h2>
+              {movie.title} <span className="modal-year">({movie.year})</span>
+            </h2>
+            <div className="modal-meta-row">
+              <span className="rating-badge-large">⭐ {ratingDisplay} / 10</span>
+              <span className="meta-divider">•</span>
+              <span className="genres-list">{movie.genres?.join(', ')}</span>
+            </div>
           </div>
 
-          <p style={{ fontSize: '14px', lineHeight: '1.6', color: '#cbd5e1', marginTop: '6px' }}>
-            {movie.fullplot || movie.plot || 'No description available for this title.'}
+          <p className="modal-plot">
+            {movie.fullplot || movie.plot || 'No detailed synopsis available for this title.'}
           </p>
 
-          {movie.cast && movie.cast.length > 0 ? (
-            <div style={{ fontSize: '13px', color: '#94a3b8' }}>
-              <strong>Cast:</strong> {movie.cast.join(', ')}
-            </div>
-          ) : null}
-
-          {movie.directors && movie.directors.length > 0 ? (
-            <div style={{ fontSize: '13px', color: '#94a3b8' }}>
-              <strong>Director(s):</strong> {movie.directors.join(', ')}
-            </div>
-          ) : null}
-
-          {/* User Rating Widget */}
-          <div className="rating-widget">
-            <div style={{ fontWeight: '600', fontSize: '14px' }}>Rate this movie:</div>
-            <form onSubmit={handleRate} className="rating-form">
-              <select
-                value={userRating}
-                onChange={(e) => setUserRating(Number(e.target.value))}
-                className="rating-select"
-              >
-                {[10, 9, 8, 7, 6, 5, 4, 3, 2, 1].map((num) => (
-                  <option key={num} value={num}>
-                    ⭐ {num} / 10
-                  </option>
-                ))}
-              </select>
-
-              <button type="submit" className="btn-rate" disabled={isSubmitting}>
-                {isSubmitting ? 'Saving...' : 'Submit Rating'}
-              </button>
-            </form>
-            {rateSuccess ? (
-              <div style={{ fontSize: '12px', color: '#10b981', marginTop: '6px' }}>
-                ✓ Thank you! Your rating has been submitted.
+          <div className="modal-cast-info">
+            {movie.cast && movie.cast.length > 0 && (
+              <div>
+                <strong>Cast:</strong> {movie.cast.join(', ')}
               </div>
-            ) : null}
+            )}
+            {movie.directors && movie.directors.length > 0 && (
+              <div>
+                <strong>Director:</strong> {movie.directors.join(', ')}
+              </div>
+            )}
+          </div>
+
+          {/* Interactive IMDb-style Star Rating Widget */}
+          <div className="star-rating-box">
+            <div className="star-rating-title">
+              <span>YOUR RATING</span>
+              <span className="current-star-score">{activeRating} / 10 ⭐</span>
+            </div>
+
+            <div className="stars-row">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((star) => (
+                <button
+                  key={star}
+                  type="button"
+                  className={`star-btn ${star <= activeRating ? 'filled' : ''}`}
+                  onMouseEnter={() => setHoverStars(star)}
+                  onMouseLeave={() => setHoverStars(0)}
+                  onClick={() => handleRateSubmit(star)}
+                  disabled={isSubmitting}
+                  title={`Rate ${star} / 10`}
+                >
+                  ★
+                </button>
+              ))}
+            </div>
+
+            {rateSuccess ? (
+              <div className="rating-toast">
+                ✓ Rating of {selectedStars}/10 submitted successfully!
+              </div>
+            ) : (
+              <div className="rating-hint">Click a star to rate from 1 to 10</div>
+            )}
           </div>
         </div>
       </div>
