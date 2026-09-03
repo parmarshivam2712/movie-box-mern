@@ -92,7 +92,7 @@ const expandedMovies = [
         languages: ["English", "Spanish"],
         plot: "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions.",
         fullplot: "Bitten by a radioactive spider in a subway station, Brooklyn teenager Miles Morales suddenly develops mysterious powers that transform him into Spider-Man.",
-        poster: "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man_Into_the_Spider-Verse_poster.png",
+        poster: "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
         cast: ["Shameik Moore", "Jake Johnson", "Hailee Steinfeld", "Mahershala Ali"],
         directors: ["Bob Persichetti", "Peter Ramsey", "Rodney Rothman"],
         imdb: { rating: 8.4, votes: 600000, id: 4633694 }
