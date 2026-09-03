@@ -1,28 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function MovieCard({ movie, onClick }) {
+  const [hasError, setHasError] = useState(false);
   const rating = movie.userAverageRating || movie.imdb?.rating || 'N/A';
 
   return (
     <div className="movie-card" onClick={() => onClick(movie)}>
       <div className="poster-container">
-        {movie.poster ? (
+        {movie.poster && !hasError ? (
           <img
             src={movie.poster}
             alt={movie.title}
             className="poster-img"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'flex';
-            }}
+            onError={() => setHasError(true)}
+            loading="lazy"
           />
-        ) : null}
-        <div
-          className="poster-fallback"
-          style={{ display: movie.poster ? 'none' : 'flex' }}
-        >
-          🎬 {movie.title}
-        </div>
+        ) : (
+          <div className="poster-fallback">
+            <span style={{ fontSize: '32px', marginBottom: '8px' }}>🎬</span>
+            <span className="fallback-title">{movie.title}</span>
+            <span className="fallback-year">{movie.year}</span>
+          </div>
+        )}
 
         <div className="badge-rating">⭐ {rating}</div>
       </div>
