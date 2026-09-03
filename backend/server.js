@@ -9,7 +9,14 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://shivparmar2712_db_user
 
 app.use(cors());
 app.use(express.json());
-
+// Lightweight health check for UptimeRobot / monitoring
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        status: 'ok',
+        uptime: process.uptime(),
+        timestamp: new Date().toISOString()
+    });
+});
 // Routes
 app.use('/api/tasks', require('./routes/tasks'));
 app.use('/api/movies', require('./routes/movies'));
@@ -24,3 +31,4 @@ mongoose.connect(MONGO_URI)
         app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     })
     .catch(err => console.error('MongoDB connection error:', err));
+
