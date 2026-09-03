@@ -104,6 +104,21 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+// PUT /api/movies/:id - Update poster or media details
+router.put('/:id', async (req, res) => {
+    try {
+        const updatedMovie = await Movie.findByIdAndUpdate(
+            req.params.id,
+            { $set: req.body },
+            { new: true, runValidators: true }
+        );
+        if (!updatedMovie) return res.status(404).json({ error: 'Movie not found' });
+        res.json({ message: 'Movie updated successfully', movie: updatedMovie });
+    } catch (err) {
+        res.status(400).json({ error: err.message });
+    }
+});
+
 // POST /api/movies/:id/rate - Submit user rating (1-10)
 router.post('/:id/rate', async (req, res) => {
     try {
