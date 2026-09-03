@@ -416,7 +416,7 @@ const expandedCatalog = [
         languages: ["English"],
         plot: "Seasonal anthology series in which police investigations unearth dark secrets of involved personnel.",
         fullplot: "Louisiana homicide detectives Rust Cohle and Marty Hart revisit a grisly 1995 murder case, uncovering dark occult secrets spanning two decades.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/490/1226764.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BYjgwYzA1NWMtNDYyZi00ZGQyLWI5NTktMDYwZjE2OTIwZWEwXkEyXkFqcGc@._V1_FMjpg_UX736_.jpg",
         cast: ["Matthew McConaughey", "Woody Harrelson", "Mahershala Ali", "Jodie Foster"],
         directors: ["Nic Pizzolatto"],
         imdb: { rating: 8.9, votes: 640000, id: 2356777 }
@@ -508,7 +508,7 @@ const expandedCatalog = [
         languages: ["Japanese"],
         plot: "Naruto Uzumaki, a hyperactive ninja, searches for recognition and wishes to become the Hokage of his village.",
         fullplot: "After two and a half years of training, Naruto returns to the Hidden Leaf Village, reuniting with friends to confront the rogue Akatsuki organization.",
-        poster: "https://static.tvmaze.com/uploads/images/original_untouched/494/1236894.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTk3MDA1ZjAtNTRhYS00YzNiLTgwOGEtYWRmYTQ3NjA0NTAwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         cast: ["Junko Takeuchi", "Noriaki Sugiyama", "Chie Nakamura"],
         directors: ["Hayato Date"],
         imdb: { rating: 8.7, votes: 190000, id: 988824 }
